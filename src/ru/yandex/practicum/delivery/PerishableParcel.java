@@ -4,6 +4,7 @@ public class PerishableParcel extends Parcel { // СКОРОПОРТЯЩАЯСЯ
 
     private final int timeToLive;
     public int currentDay;
+    private static final int BASE_COST = 3;
 
     public PerishableParcel(String description, int weight, String deliveryAddress, int sendDay, int timeToLive) {
         super(description, weight, deliveryAddress, sendDay);
@@ -16,17 +17,7 @@ public class PerishableParcel extends Parcel { // СКОРОПОРТЯЩАЯСЯ
 
     @Override
     protected int getBaseCost() {
-        return 3;
-    }
-
-    @Override
-    public int getWeight() {
-        return weight;
-    }
-
-    @Override
-    public String getDescription() {
-        return description;
+        return BASE_COST;
     }
 
 }

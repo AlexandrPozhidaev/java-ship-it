@@ -13,7 +13,7 @@ public class DeliveryApp {
     private static final ParcelBox<FragileParcel> fragileBox = new ParcelBox<>(75);
     private static final ParcelBox<PerishableParcel> perishableBox = new ParcelBox<>(100);
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         boolean running = true;
         while (running) {
             showMenu();

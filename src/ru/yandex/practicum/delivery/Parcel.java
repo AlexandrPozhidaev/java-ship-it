@@ -28,7 +28,11 @@ public abstract class Parcel {
         return weight * getBaseCost();
     }
 
-    public abstract int getWeight();
+    public int getWeight() {
+        return weight;
+    }
 
-    public abstract String getDescription();
+    public String getDescription() {
+        return description;
+    }
 }
